@@ -60,26 +60,53 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(39, 145, 174, 0.7137254902);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(186, 24, 24, 0.764);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(9, 128, 27, 0.9411764706);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #87a51c;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgba(18, 65, 236, 0.9215686275);
+}
+
+.active {
+  display: block;
+  -webkit-animation: scaleAnim 1s ease-in-out;
+          animation: scaleAnim 1s ease-in-out;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleX(0);
+  }
+  100% {
+    transform: translateY(0) scaleX(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleX(0);
+  }
+  100% {
+    transform: translateY(0) scaleX(1);
+  }
 }
 
 .controls {
@@ -93,6 +120,13 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
+.controls .active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+}
+.controls .active-btn i {
+  color: var(--color-white) !important;
+}
 .controls .control {
   padding: 1rem;
   cursor: pointer;
@@ -105,4 +139,9 @@ section {
   align-items: center;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
+}
+.controls .control i {
+  font-size: 1.2rem;
+  color: var(--color-grey2);
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
