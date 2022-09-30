@@ -62,31 +62,26 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #2791aeb6;
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color:rgba(186, 24, 24, 0.764);
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #09801bf0;
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #87a51c;
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #1241eceb;
 }
 
 .active{
@@ -139,3 +134,30 @@ section{
         }
     }
 }
+
+/*Header-content*/
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .h-shape{
+            transition: all .4s ease-in-out;
+            width: 65%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+            
+
+        }
+    }
+}
+
+/*Independent components*/

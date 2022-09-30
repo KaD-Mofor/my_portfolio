@@ -60,31 +60,26 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgba(39, 145, 174, 0.7137254902);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgba(186, 24, 24, 0.764);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgba(9, 128, 27, 0.9411764706);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #87a51c;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgba(18, 65, 236, 0.9215686275);
 }
 
 .active {
@@ -144,4 +139,30 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey2);
   pointer-events: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*Header-content*/
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-header .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+}
+
+/*Independent components*//*# sourceMappingURL=style.css.map */
